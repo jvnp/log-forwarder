@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  app:
+    build: ./app
+    ports:
+      - "3000:3000"
+  forwarder:
+    build: ./forwarder
+    ports:
+      - "8010:8010"
+  server:
+    build: ./server
+    ports:
+      - "8000:8000"
